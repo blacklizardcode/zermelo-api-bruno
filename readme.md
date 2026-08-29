@@ -1,44 +1,45 @@
 # Zermelo api bruno
 
-This is a repository putting the zermelo api into bruno for testing and reference for **your** projects.
+[English](readme.en.md) | **Nederlands**
 
-## How to use
+Dit is een repository die de Zermelo API in Bruno zet voor testen en als naslagwerk voor **jouw** projecten.
 
-1. Download the project: code -> Download Zip
-2. Unzip with your favorite unzipping tool 
-3. In bruno click on the hamburger menu in the top right
+## Hoe te gebruiken
+
+1. Download het project: code -> Download Zip
+2. Pak het uit met je favoriete uitpakprogramma
+3. Klik in Bruno op het hamburgermenu rechtsboven
 4. File -> Open Collection
-5. Select the unzipped folder
-6. configure the env vars by clicking on `zermelo` in the navigation of bruno -> `1 collection environment` and set at least the env var `baseUrl` and `code` or `access_token`
+5. Selecteer de uitgepakte map
+6. Configureer de omgevingsvariabelen door in de navigatie van Bruno op `zermelo` te klikken -> `1 collection environment` en stel in ieder geval de variabelen `baseUrl` en `code` of `access_token` in
 
-## Folder structure
+## Mapstructuur
 
 ``` yaml
 zermelo-api-bruno
-├── documented # Endpoints documented at https://docs.zportal.nl/docs/
+├── documented # Endpoints gedocumenteerd op https://docs.zportal.nl/docs/
 ├── enviroments
-│   └── zermelo.yaml # Configuration for variables
-├── undocumented # Endpoints that are not documented at https://docs.zportal.nl/docs/
-└── readme.md # This file
+│   └── zermelo.yaml # Configuratie voor variabelen
+├── undocumented # Endpoints die niet gedocumenteerd zijn op https://docs.zportal.nl/docs/
+└── readme.md # Dit bestand
 
 ```
 
 ## Todo
 
-- [x] endpoints from the [docs](https://docs.zportal.nl/docs/)
-- [ ] endpoints from the [swagger ui](https://rlo.zportal.nl/static/swagger/)
+- [x] endpoints uit de [docs](https://docs.zportal.nl/docs/)
+- [ ] endpoints uit de [swagger ui](https://rlo.zportal.nl/static/swagger/)
 
-## Contributing
+## Bijdragen
 
-If you wish to contribute please do so, the easy part is just done and we still need to document most of the api.
+Als je wilt bijdragen, doe dat vooral. Het makkelijke gedeelte is net gedaan en we moeten nog het grootste deel van de API documenteren.
 
 ### Tools
 https://rlo.zportal.nl/static/swagger/
 
 https://docs.zportal.nl/docs/
 
-### Guidelines
+### Richtlijnen
 
-- No fake endpoints - all endpoints will have to be in the [swagger ui](https://rlo.zportal.nl/static/swagger/
-)
-- No location specific endpoints. I have not yet found these, but if you do - **do not** create a pull request with these.
+- Geen nependpoints - alle endpoints moeten terug te vinden zijn in de [swagger ui](https://rlo.zportal.nl/static/swagger/)
+- Geen locatie-specifieke endpoints. Ik heb deze nog niet gevonden, maar mocht je ze wel vinden - maak **geen** pull request aan met deze endpoints.
