@@ -1,0 +1,41 @@
+info:
+  name: departmentsofbranches
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/departmentsofbranches"
+  params:
+    - name: branchOfSchool
+      value: "502"
+      type: query
+      description: same as schoolInSchoolYear
+      disabled: true
+    - name: code
+      value: d4v
+      type: query
+      disabled: true
+    - name: id
+      value: "702"
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: "502"
+      type: query
+      description: same as brancbranchOfSchoolhOfSchool
+      disabled: true
+    - name: fields
+      value: id,code,yearOfEducation,branchOfSchool,teacherTeams,mainGroupAuthority,educationType,weekTimeTable,teachingLevel,schoolInSchoolYear,schoolInSchoolYearName,educations,profiles,branchOfSchoolCode,schoolInSchoolYearId
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

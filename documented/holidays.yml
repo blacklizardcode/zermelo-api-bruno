@@ -1,0 +1,43 @@
+info:
+  name: holidays
+  type: http
+  seq: 11
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/holidays"
+  params:
+    - name: end
+      value: "20250609"
+      type: query
+      disabled: true
+    - name: id
+      value: "509"
+      type: query
+      disabled: true
+    - name: name
+      value: Pinkstermaandag
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: "401"
+      type: query
+      disabled: true
+    - name: start
+      value: "20250609"
+      type: query
+      disabled: true
+    - name: fields
+      value: id,schoolInSchoolYear,name,start,end
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

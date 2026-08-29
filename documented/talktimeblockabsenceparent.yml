@@ -1,0 +1,51 @@
+info:
+  name: talktimeblockabsenceparent
+  type: http
+  seq: 21
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/talktimeblockabsenceparent"
+  params:
+    - name: id
+      value: ""
+      type: query
+      disabled: true
+    - name: talkDay
+      value: ""
+      type: query
+      disabled: true
+    - name: talkTimeBlock
+      value: ""
+      type: query
+      disabled: true
+    - name: user
+      value: ""
+      type: query
+      disabled: true
+    - name: fields
+      value: id,talkDay,talkTimeBlock,user,overruled,talkTimeBlockDefinition
+      type: query
+      disabled: true
+    - name: parentTeacherNight
+      value: ""
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: overruled
+      value: ""
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

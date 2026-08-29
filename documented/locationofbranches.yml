@@ -1,0 +1,63 @@
+info:
+  name: locationofbranches
+  type: http
+  seq: 14
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/locationofbranches"
+  params:
+    - name: branchOfSchool
+      value: "201"
+      type: query
+      disabled: true
+    - name: id
+      value: "1105"
+      type: query
+      disabled: true
+    - name: name
+      value: t43
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: "201"
+      type: query
+      disabled: true
+    - name: fields
+      value: branchOfSchool,id,name,schoolInSchoolYear,allowMeetings,courseCapacity,parentteachernightCapacity,secondaryBranches,supportsConcurrentAppointments,branch
+      type: query
+      disabled: true
+    - name: allowMeetings
+      value: "false"
+      type: query
+      disabled: true
+    - name: courseCapacity
+      value: "33"
+      type: query
+      disabled: true
+    - name: parentteachernightCapacity
+      value: "1"
+      type: query
+      disabled: true
+    - name: secondaryBranches
+      value: ""
+      type: query
+      disabled: true
+    - name: supportsConcurrentAppointments
+      value: "false"
+      type: query
+      disabled: true
+    - name: branch
+      value: ""
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

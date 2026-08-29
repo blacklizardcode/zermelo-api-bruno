@@ -1,0 +1,103 @@
+info:
+  name: jobs
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/jobs"
+  params:
+    - name: contract
+      value: ""
+      type: query
+      disabled: true
+    - name: created
+      value: ""
+      type: query
+      disabled: true
+    - name: durationManually
+      value: "false"
+      type: query
+      disabled: true
+    - name: fte
+      value: ""
+      type: query
+      disabled: true
+    - name: fteReal
+      value: ""
+      type: query
+      disabled: true
+    - name: id
+      value: ""
+      type: query
+      disabled: true
+    - name: lastModified
+      value: ""
+      type: query
+      disabled: true
+    - name: lastModifiedBy
+      value: ""
+      type: query
+      disabled: true
+    - name: fields
+      value: contract,created,durationManually,employmentType,fte,fteReal,functionCategory,id,lastModified,lastModifiedBy,clockHoursGross,employee,employerCost,end,externalId,firstName,fteManually,functionCategoryManually,lastName,prefix,privateComment,projectBudget,publicComment,start,type
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: teacherTeam
+      value: ""
+      type: query
+      disabled: true
+    - name: week
+      value: "202635"
+      type: query
+      disabled: true
+    - name: end
+      value: ""
+      type: query
+      disabled: true
+    - name: externalId
+      value: ""
+      type: query
+      disabled: true
+    - name: fteManually
+      value: ""
+      type: query
+      disabled: true
+    - name: functionCategoryManually
+      value: ""
+      type: query
+      disabled: true
+    - name: privateComment
+      value: ""
+      type: query
+      disabled: true
+    - name: projectBudget
+      value: ""
+      type: query
+      disabled: true
+    - name: publicComment
+      value: ""
+      type: query
+      disabled: true
+    - name: start
+      value: ""
+      type: query
+      disabled: true
+    - name: type
+      value: ""
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

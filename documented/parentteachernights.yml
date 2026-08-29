@@ -1,0 +1,107 @@
+info:
+  name: parentteachernights
+  type: http
+  seq: 15
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/parentteachernights"
+  params:
+    - name: allowRequestingUntil
+      value: ""
+      type: query
+      disabled: true
+    - name: archived
+      value: ""
+      type: query
+      disabled: true
+    - name: description
+      value: ""
+      type: query
+      disabled: true
+    - name: hasParentToSchedulerRemark
+      value: ""
+      type: query
+      disabled: true
+    - name: maxNumberOfRequests
+      value: ""
+      type: query
+      disabled: true
+    - name: parentCanRequestLongTalk
+      value: ""
+      type: query
+      disabled: true
+    - name: published
+      value: ""
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: title
+      value: ""
+      type: query
+      disabled: true
+    - name: familyMember
+      value: ""
+      type: query
+      disabled: true
+    - name: fields
+      value: maxNumberOfRequests,parentCanRequestLongTalk,published,schoolInSchoolYear,title,familyMember,employeeScheduleFill,employeeScheduleSpanWidthFactor,employeeScheduleWidth,id,parentScheduleFill,parentScheduleSpanWidthFactor,referenceWeek,schedulePublished,talkDays,talkDaysText
+      type: query
+      disabled: true
+    - name: employeeScheduleFill
+      value: ""
+      type: query
+      disabled: true
+    - name: employeeScheduleSpanWidthFactor
+      value: ""
+      type: query
+      disabled: true
+    - name: employeeScheduleWidth
+      value: ""
+      type: query
+      disabled: true
+    - name: id
+      value: ""
+      type: query
+      disabled: true
+    - name: parentScheduleFill
+      value: ""
+      type: query
+      disabled: true
+    - name: parentScheduleSpanWidthFactor
+      value: ""
+      type: query
+      disabled: true
+    - name: parentScheduleWidth
+      value: ""
+      type: query
+      disabled: true
+    - name: referenceWeek
+      value: ""
+      type: query
+      disabled: true
+    - name: schedulePublished
+      value: ""
+      type: query
+      disabled: true
+    - name: talkDays
+      value: ""
+      type: query
+      disabled: true
+    - name: talkDaysText
+      value: ""
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

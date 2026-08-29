@@ -1,0 +1,11 @@
+info:
+  name: documented
+  type: folder
+  seq: 7
+
+request:
+  auth: inherit
+
+docs:
+  content: <br/>
+  type: text/markdown

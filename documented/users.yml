@@ -1,0 +1,203 @@
+info:
+  name: users
+  type: http
+  seq: 23
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/users"
+  params:
+    - name: code
+      value: ~me
+      type: query
+      disabled: true
+    - name: email
+      value: ""
+      type: query
+      disabled: true
+    - name: firstName
+      value: ""
+      type: query
+      disabled: true
+    - name: lastName
+      value: ""
+      type: query
+      disabled: true
+    - name: magisterUUID
+      value: ""
+      type: query
+      disabled: true
+    - name: prefix
+      value: ""
+      type: query
+      disabled: true
+    - name: somUUID
+      value: ""
+      type: query
+      disabled: true
+    - name: fields
+      value: ""
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: admin
+      value: ""
+      type: query
+      disabled: true
+    - name: archived
+      value: ""
+      type: query
+      disabled: true
+    - name: archivedTime
+      value: ""
+      type: query
+      disabled: true
+    - name: city
+      value: ""
+      type: query
+      disabled: true
+    - name: dateOfBirth
+      value: ""
+      type: query
+      disabled: true
+    - name: displayName
+      value: ""
+      type: query
+      disabled: true
+    - name: gender
+      value: ""
+      type: query
+      disabled: true
+    - name: hasPassword
+      value: ""
+      type: query
+      disabled: true
+    - name: houseNumber
+      value: ""
+      type: query
+      disabled: true
+    - name: isApplicationManager
+      value: ""
+      type: query
+      disabled: true
+    - name: isBranchLeader
+      value: ""
+      type: query
+      disabled: true
+    - name: isDean
+      value: ""
+      type: query
+      disabled: true
+    - name: isEmployee
+      value: ""
+      type: query
+      disabled: true
+    - name: isFamilyMember
+      value: ""
+      type: query
+      disabled: true
+    - name: isMentor
+      value: ""
+      type: query
+      disabled: true
+    - name: isParentTeacherNightScheduler
+      value: ""
+      type: query
+      disabled: true
+    - name: isSchoolLeader
+      value: ""
+      type: query
+      disabled: true
+    - name: isSchoolScheduler
+      value: ""
+      type: query
+      disabled: true
+    - name: isSectionLeader
+      value: ""
+      type: query
+      disabled: true
+    - name: isStudent
+      value: ""
+      type: query
+      disabled: true
+    - name: isStudentAdministrator
+      value: ""
+      type: query
+      disabled: true
+    - name: isTeamLeader
+      value: ""
+      type: query
+      disabled: true
+    - name: ldap
+      value: ""
+      type: query
+      disabled: true
+    - name: mayLogin
+      value: ""
+      type: query
+      disabled: true
+    - name: postalCode
+      value: ""
+      type: query
+      disabled: true
+    - name: street
+      value: ""
+      type: query
+      disabled: true
+    - name: tfaMandatory
+      value: ""
+      type: query
+      disabled: true
+    - name: totpEnabled
+      value: ""
+      type: query
+      disabled: true
+    - name: userKind
+      value: ""
+      type: query
+      disabled: true
+    - name: userPrincipalName
+      value: ""
+      type: query
+      disabled: true
+    - name: username
+      value: ""
+      type: query
+      disabled: true
+    - name: archivable
+      value: ""
+      type: query
+      disabled: true
+    - name: familyMember
+      value: ""
+      type: query
+      disabled: true
+    - name: noSchoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: removable
+      value: ""
+      type: query
+      disabled: true
+    - name: schoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: type
+      value: ""
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,28 @@
+info:
+  name: oauth/token
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/oauth/token?code={{code}}&grant_type=authorization_code"
+  params:
+    - name: code
+      value: "{{code}}"
+      type: query
+    - name: grant_type
+      value: authorization_code
+      type: query
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: bru.setEnvVar("access_token", res.body.access_token)
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

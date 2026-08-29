@@ -1,0 +1,40 @@
+info:
+  name: liveschedule
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/liveschedule"
+  headers:
+    - name: Authorization
+      value: Bearer {{access_token}}
+  params:
+    - name: week
+      value: "202635"
+      type: query
+      disabled: true
+    - name: fields
+      value: week,user,appointments,status,replacements
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: student
+      value: ~me
+      type: query
+      disabled: true
+    - name: teacher
+      value: ""
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,51 @@
+info:
+  name: familymembers
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/familymembers"
+  params:
+    - name: students
+      value: ""
+      type: query
+      disabled: true
+    - name: userCode
+      value: ""
+      type: query
+      disabled: true
+    - name: fields
+      value: email,firstName,lastName,prefix,students,userCode
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: parentTeacherNight
+      value: "false"
+      type: query
+      disabled: true
+    - name: ldap
+      value: "false"
+      type: query
+      disabled: true
+    - name: hasPassword
+      value: "false"
+      type: query
+      disabled: true
+    - name: archived
+      value: "false"
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

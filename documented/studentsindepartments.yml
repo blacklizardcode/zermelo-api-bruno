@@ -1,0 +1,119 @@
+info:
+  name: studentsindepartments
+  type: http
+  seq: 18
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v3/studentsindepartments"
+  params:
+    - name: id
+      value: ""
+      type: query
+      disabled: true
+    - name: schoolInSchoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: student
+      value: ""
+      type: query
+      disabled: true
+    - name: archived
+      value: ""
+      type: query
+      disabled: true
+    - name: branchOfSchool
+      value: ""
+      type: query
+      disabled: true
+    - name: fields
+      value: id,schoolInSchoolYear,student,deanApprovesSelection,departmentOfBranch,departmentOfBranchCode,educationalTrack,educations,email,firstName,fullName,gender,groupInDepartments,lastModified,lastName,lwoo,mainGroup,mainGroupName,mainGroupPreviousYear,mainGroupPreviousYearName,mentorGroup,mentorGroupPreviousYear,outflowComment,outflowPercentage,parentApprovalTime,parentApprovesSelection,participationWeight,prefix,previousMainGroup,profiles,prognosisComment,schoolPreviousYear,studentApprovesSelection,studentHasEditedSelection,studentInDepartmentPreviousYear
+      type: query
+      disabled: true
+    - name: departmentOfBranch
+      value: ""
+      type: query
+      disabled: true
+    - name: educationalTrack
+      value: ""
+      type: query
+      disabled: true
+    - name: groupInDepartments
+      value: ""
+      type: query
+      disabled: true
+    - name: mainGroup
+      value: ""
+      type: query
+      disabled: true
+    - name: mentorGroup
+      value: ""
+      type: query
+      disabled: true
+    - name: outflowComment
+      value: ""
+      type: query
+      disabled: true
+    - name: participationWeight
+      value: ""
+      type: query
+      disabled: true
+    - name: prognosisComment
+      value: ""
+      type: query
+      disabled: true
+    - name: studentInDepartmentPreviousYear
+      value: ""
+      type: query
+      disabled: true
+    - name: departmentOfBranchPreviousYear
+      value: ""
+      type: query
+      disabled: true
+    - name: familyMember
+      value: ""
+      type: query
+      disabled: true
+    - name: groupInDepartmentPreviousYear
+      value: ""
+      type: query
+      disabled: true
+    - name: inflow
+      value: ""
+      type: query
+      disabled: true
+    - name: outflow
+      value: ""
+      type: query
+      disabled: true
+    - name: relatedToDepartment
+      value: ""
+      type: query
+      disabled: true
+    - name: schoolYear
+      value: ""
+      type: query
+      disabled: true
+    - name: teacher
+      value: ""
+      type: query
+      disabled: true
+    - name: teacherTeam
+      value: ""
+      type: query
+      disabled: true
+    - name: visibleToStudent
+      value: ""
+      type: query
+      disabled: true
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,14 @@
+name: zermelo
+variables:
+  - name: baseUrl
+    value: 
+    description: ""
+  - name: code
+    value: 
+    description: ""
+  - name: user
+    value: 
+    description: ""
+  - name: access_token
+    value: 
+    description: ""
